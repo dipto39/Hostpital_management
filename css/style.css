@@ -1,0 +1,583 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*font*/
+@font-face {
+    font-family: boldd;
+    src: url(../font/PassionOne-Bold.ttf);
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: main_font;
+    src: url(../font/Chilanka-Regular.ttf);
+}
+
+body {
+    font-family: main_font !important;
+}
+
+.hf {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+
+
+/* style contact section */
+.c_email,
+.c_phone {
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+}
+
+/* Style all font awesome icons */
+.fa {
+    /* padding: 10px; */
+    padding: 7px 6px;
+    /* font-size: 30px; */
+    /* width: 50px; */
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/* Twitter */
+.fa-youtube {
+    background: #e92626;
+    color: white;
+}
+
+/* Twitter */
+.fa-instagram {
+    background-color: rgb(255, 47, 144);
+    color: white;
+}
+
+/* sytle logo*/
+.logo {
+    font-family: boldd;
+    font-weight: 900;
+    padding: 0;
+}
+
+/* nav custome style */
+.navbar {
+    background-color: #e4edff;
+}
+
+.nav-link {
+    color: #0dcaf0;
+    font-weight: 700;
+}
+
+.actives {
+    background-color: #0dcaf0 !important;
+    color: #ffffff !important;
+}
+
+.nav-item {
+    margin: 0 5px;
+}
+
+/* login & registation form */
+.l_bg_image {
+    width: 100%;
+    max-height: 500px;
+}
+
+#carouselExampleDark img {
+    max-height: 600px !important;
+    /* filter: blur(1px);
+    -webkit-filter: blur(1px); */
+}
+
+.zinde {
+    z-index: 1;
+}
+
+/*spcaial feature*/
+.hove {
+    color: #0dcaf0;
+    transition: all .5s;
+    border: 1px solid;
+    cursor: pointer;
+    max-width: 250px;
+}
+
+.hove:hover {
+    background-color: #0dcaf0;
+    color: rgb(255, 255, 255);
+}
+
+.servic_single {
+    border: 1px solid #0dcaf0;
+    padding: 15px;
+    transition: all .5s;
+
+}
+
+.servic_single .btn {
+    border: 1px solid white;
+}
+
+.servic_single:hover {
+    background-color: #0dcaf0;
+    color: white;
+}
+
+.servic_single:hover a {
+    color: rgb(255, 255, 255);
+}
+
+.servic_single a {
+    text-decoration: none;
+    color: #0dcaf0;
+}
+
+
+/* happy claint section */
+.home-testimonial {
+    background-color: #0dcaf0;
+    height: 380px
+}
+
+.home-testimonial-bottom {
+    background-color: #f8f8f8;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    position: relative;
+    height: 130px;
+    top: 190px
+}
+
+.home-testimonial h3 {
+    color: var(--orange);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase
+}
+
+.home-testimonial h2 {
+    color: white;
+    font-size: 28px;
+    font-weight: 700
+}
+
+.testimonial-inner {
+    position: relative;
+    top: -174px
+}
+
+.testimonial-pos {
+    position: relative;
+    top: 24px
+}
+
+.testimonial-inner .tour-desc {
+    border-radius: 5px;
+    padding: 40px
+}
+
+.color-grey-3 {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 14px;
+    color: #6c83a2
+}
+
+.testimonial-inner img.tm-people {
+    width: 60px;
+    height: 60px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    max-width: none
+}
+
+.link-name {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 14px;
+    color: #6c83a2
+}
+
+.link-position {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 12px;
+    color: #6c83a2
+}
+
+#footer a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
+#footer li {
+    padding: 4px;
+
+}
+
+#footer li:hover {
+    background-color: #2bcdee;
+}
+
+/* breadcrumb */
+
+
+/*custom font*/
+
+
+
+
+.breadcrumb {
+    /*centering*/
+    display: inline-block;
+    box-shadow: 0 0 15px 1px rgb(21, 150, 255);
+    overflow: hidden;
+    border-radius: 5px;
+    /*Lets add the numbers for each link using CSS counters. flag is the name of the counter. to be defined using counter-reset in the parent element of the links*/
+    counter-reset: flag;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    outline: none;
+    display: block;
+    float: left;
+    font-size: 12px;
+    line-height: 36px;
+    color: white;
+    /*need more margin on the left of links to accomodate the numbers*/
+    padding: 0 10px 0 60px;
+    background: #333;
+    background: linear-gradient(#333, rgb(67, 186, 255));
+    position: relative;
+}
+
+/*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
+.breadcrumb a:first-child {
+    padding-left: 46px;
+    border-radius: 5px 0 0 5px;
+    /*to match with the parent's radius*/
+}
+
+.breadcrumb a:first-child:before {
+    left: 14px;
+}
+
+.breadcrumb a:last-child {
+    border-radius: 0 5px 5px 0;
+    /*this was to prevent glitches on hover*/
+    padding-right: 20px;
+}
+
+/*hover/active styles*/
+.breadcrumb a.active,
+.breadcrumb a:hover {
+    background: rgb(12, 186, 255);
+    background: linear-gradient(#333, #111);
+}
+
+.breadcrumb a.active:after,
+.breadcrumb a:hover:after {
+    background: rgb(255, 0, 0);
+    background: linear-gradient(145deg, #333, #222);
+}
+
+/*adding the arrows for the breadcrumbs using rotated pseudo elements*/
+.breadcrumb a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -18px;
+    /*half of square's length*/
+    /*same dimension as the line-height of .breadcrumb a */
+    width: 36px;
+    height: 36px;
+    /*as you see the rotated square takes a larger height. which makes it tough to position it properly. So we are going to scale it down so that the diagonals become equal to the line-height of the link. We scale it to 70.7% because if square's: 
+length = 1; diagonal = (1^2 + 1^2)^0.5 = 1.414 (pythagoras theorem)
+if diagonal required = 1; length = 1/1.414 = 0.707*/
+    transform: scale(0.707) rotate(45deg);
+    /*we need to prevent the arrows from getting buried under the next link*/
+    z-index: 1;
+    /*background same as links but the gradient will be rotated to compensate with the transform applied*/
+    background: #555;
+    background: linear-gradient(135deg, #777, #333);
+    /*stylish arrow design using box shadow*/
+    box-shadow: 2px -2px 0 2px rgba(0, 0, 0, 0.4),
+        3px -3px 0 2px rgba(255, 255, 255, 0.1);
+    /*
+5px - for rounded arrows and 
+50px - to prevent hover glitches on the border created using shadows*/
+    border-radius: 0 5px 0 50px;
+}
+
+/*we dont need an arrow after the last link*/
+.breadcrumb a:last-child:after {
+    content: none;
+}
+
+/*we will use the :before element to show numbers*/
+
+.flat a,
+.flat a:after {
+    background: #0dcaf0;
+    color: #eee;
+    transition: all 0.7s;
+}
+
+.flat a:before {
+    background: #111;
+    box-shadow: 0 0 0 1px #00c;
+}
+
+.flat a:hover,
+.flat a.active,
+.flat a:hover:after,
+.flat a.active:after {
+    background: #3b5998;
+}
+
+/* end boocumg */
+
+.pricesection {
+    max-width: 400px;
+    text-align: center;
+    margin: auto;
+}
+
+.pricesection p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.spdoctor {
+    color: #0dcaf0;
+    text-align: center;
+}
+
+.spdoctor img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+/* filter doctor */
+.filter_doctor {
+    position: absolute;
+    right: 20px;
+}
+
+.filter_doctor select {
+    margin: 0 5px;
+    padding: 4px 8px;
+    outline: #0dcaf0;
+    border: 1px solid #0dcaf0;
+}
+
+/* style for paginition */
+.pagi {
+    color: #0dcaf0;
+}
+
+.pagi a {
+    color: #0dcaf0;
+}
+
+/* df */
+.pointer {
+    cursor: pointer;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-primary);
+}
+
+.noti {
+    font-size: 13px;
+}
+
+/* style for loder */
+:root {
+    --color-bg: #eaeaea;
+    --color-loader: #0dcaf0;
+    --loader-size: 100px;
+    --loader-speed: 500ms;
+}
+
+.loader_container {
+    height: 100vh;
+    width: 100%;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.747);
+
+}
+
+.loader {
+
+    --loader-height: calc(var(--loader-size) / 7);
+    display: flex;
+    /* justify-content: center; */
+    position: relative;
+}
+
+.loader::before {
+    content: "";
+    position: absolute;
+}
+
+.loader::before,
+.loader>span {
+    display: block;
+    width: var(--loader-height);
+    height: var(--loader-height);
+    border-radius: 50%;
+    background: var(--color-loader);
+
+    animation-name: to-right;
+    animation-duration: var(--loader-speed);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.loader>span:nth-child(even) {
+    visibility: hidden;
+}
+
+.loader>span:first-child {
+    animation-name: scale-up;
+}
+
+.loader>span:last-child {
+    animation-name: scale-up;
+    animation-direction: reverse;
+}
+
+@keyframes to-right {
+    to {
+        transform: translateX(200%);
+    }
+}
+
+@keyframes scale-up {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+
+
+/* end loder */
+
+.active {
+    color: white;
+    background-color: #0dcaf0;
+}
+
+
+/* style for responsive  */
+@media only screen and (max-width:576px) {
+
+    /* hide social icon */
+    .c_social {
+        display: none;
+    }
+
+    .carousel-caption {
+        top: 40% !important;
+    }
+
+    /* for login form */
+
+
+}
+
+@media only screen and (max-width:768px) {
+
+
+    .home-testimonial {
+        margin-bottom: 650px;
+    }
+
+
+}
+
+@media only screen and (min-width:992px) {
+
+    /* for login form */
+    .lrform {
+        width: 50%;
+    }
+
+    .limg {
+        width: 50%;
+    }
+
+
+}
+
+@media only screen and (min-width:992px) {
+
+    /* for login form */
+    .lrform {
+        width: 50%;
+    }
+
+    .limg {
+        width: 50%;
+    }
+
+
+}
+
+@media only screen and (min-width:768px) {
+
+
+
+    .home-testimonial {
+        margin-bottom: 150px;
+    }
+
+}
+
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}

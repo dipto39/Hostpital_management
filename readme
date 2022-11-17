@@ -1,0 +1,6 @@
+* First create a database named "health_care".
+* Import tables from here "/db/health_care.sql".
+* admin username "admin" password "11".
+* user login "user@gmail.com" password "1122".
+* doctor login "doctor@email.com" password "1122".
+* Then enjoy :)
