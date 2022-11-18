@@ -33,28 +33,7 @@ if (isset($_POST['submit'])) {
 
 <head>
 	<title>Admin-Login</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta content="" name="description" />
-	<meta content="" name="author" />
-	<!-- Bootstrap -->
-	<link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-	<!-- Font Awesome -->
-	<link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	<!-- NProgress -->
-	<link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
-	<!-- iCheck -->
-	<link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
-	<!-- bootstrap-progressbar -->
-	<link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
-	<!-- JQVMap -->
-	<link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
-	<!-- bootstrap-daterangepicker -->
-	<link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
-	<!-- Custom Theme Style -->
-	<link href="../assets/css/custom.min.css" rel="stylesheet">
+	<?php include 'include/head.php';?>
 </head>
 
 <body class="login">
@@ -102,17 +81,13 @@ if (isset($_POST['submit'])) {
 		</div>
 	</div>
 
-	<script src="vendor/jquery/jquery.min.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-	<script src="vendor/modernizr/modernizr.js"></script>
-	<script src="vendor/jquery-cookie/jquery.cookie.js"></script>
-	<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-	<script src="vendor/switchery/switchery.min.js"></script>
-	<script src="vendor/jquery-validation/jquery.validate.min.js"></script>
+	<script src="../vendors/jquery.min.js"></script>
+	<script src="../vendors/bootstrap.min.js"></script>
 
-	<script src="assets/js/main.js"></script>
 
-	<script src="assets/js/login.js"></script>
+	<script src="../assets/js/main.js"></script>
+
+	<script src="../assets/js/login.js"></script>
 	<script>
 		jQuery(document).ready(function() {
 			Main.init();
